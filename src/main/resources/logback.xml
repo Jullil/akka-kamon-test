@@ -1,0 +1,22 @@
+<configuration scan="true" scanPeriod="30 seconds">
+  <variable name="APP_VERSION" value="2.0.0-SNAPSHOT"/>
+
+  <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [%X{akkaSource}] %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!--
+    The logger name is typically the Java/Scala package name.
+    This configures the log level to log at for a package and its children packages.
+  -->
+  <logger name="application" level="DEBUG"/>
+  <logger name="akka" level="DEBUG"/>
+  <logger name="kamon" level="DEBUG"/>
+
+  <root level="DEBUG">
+    <appender-ref ref="Console"/>
+  </root>
+
+</configuration>

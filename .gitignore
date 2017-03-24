@@ -1,0 +1,9 @@
+.gradle
+assignment.iml
+build
+.idea
+*.iml
+target
+logs
+native
+output
