@@ -9,7 +9,7 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= {
-  val akkaVersion = "2.4.0"
+  val akkaVersion = "2.4.17"
   val kamonVersion = "0.6.6"
   Seq(
     "com.typesafe.akka" %% "akka-actor" % akkaVersion,
